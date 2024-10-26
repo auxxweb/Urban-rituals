@@ -8819,7 +8819,9 @@ h3.vr {
   font-weight: 900; }
 
 .container {
-  max-width: 1210px; }
+  max-width: 1210px;
+  
+}
 
 .bg-light {
   background: #ebe8de !important; }
