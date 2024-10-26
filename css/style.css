@@ -4,6 +4,31 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+ .hero-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Place video behind content */
+}
+
+.content-overlay {
+  position: relative;
+  z-index: 1; /* Bring content in front of the video */
+  color: white; /* Adjust content color as needed */
+  text-align: center;
+  padding: 2rem;
+}
+
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
