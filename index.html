@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	  <!-- <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container" style="height: 100px;">
 	      <a class="navbar-brand" href="index.html"><img src="./images/home/Untitled design (1).png" style=" color: aliceblue;  width: 230px; height: 230px;"></span></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,13 +41,66 @@
 	        	<li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
 	        	<li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
 	        	<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	        	<!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
+	        	<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
 	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
 	    </div>
-	  </nav>
+	  </nav> -->
     <!-- END nav -->
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="ftco-navbar" style="background-color: rgba(0, 0, 0, 0.6);">
+		<div class="container">
+		  <!-- Logo image -->
+		  <a class="navbar-brand" href="index.html">
+			<img src="./images/home/Untitled design (1).png" alt="Logo" style="width: 130px; height: auto;">
+		  </a>
+		  <!-- Navbar Toggler -->
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="oi oi-menu"></span> Menu
+		  </button>
+	  
+		  <!-- Navbar Links -->
+		  <div class="collapse navbar-collapse" id="ftco-nav">
+			<ul class="navbar-nav ml-auto">
+			  <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+			  <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+			  <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+			  <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+			  <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+	  
+	  <style>
+		/* Transparent background */
+		.navbar {
+		  background-color: rgba(0, 0, 0, 0.6); 
+		}
+	  
+		/* Highlight style for active links */
+		.navbar-nav .nav-item .nav-link.active,
+		.navbar-nav .nav-item .nav-link:hover {
+		  color: #FFD700; /* Gold color */
+		  background-color: #ece7e7; 
+		  border-radius: 5px;
+		}
+	  
+		/* Adjust spacing for logo and links */
+		.navbar-brand img {
+		  max-height: 90px;
+		}
+	  
+		.navbar-nav .nav-item .nav-link {
+		  padding: 10px 15px;
+		}
+	  
+		/* Adjust padding when navbar is fixed */
+		body {
+		  padding-top: 80px; /* Adjust space below fixed navbar */
+		}
+	  </style>
+	  
 
     <section class="hero-wrap js-fullheight" style="background-image: url(images/home/urban\ rituals.png);" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
