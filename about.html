@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <title>Urban Rituals</title>
+  <link rel="icon" href="./images/home/Untitled design (1).png" type="image/png"> <!-- Favicon link -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -28,25 +30,58 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container" style="height: 100px;">
-			<a class="navbar-brand" href="index.html"><img src="./images/home/Untitled design (1).png" style=" color: aliceblue;  width: 230px; height: 230px;"></span></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-	        	<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-	        	<li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-	        	<li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
-	        	<li class="nav-item active"><a href="about.html" class="nav-link">About</a></li>
-	        	<!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-	        </ul>
-	      </div>
-	    </div>
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="ftco-navbar" style="background-color: rgba(0, 0, 0, 0.6);">
+		<div class="container">
+		  <!-- Logo image -->
+		  <a class="navbar-brand" href="index.html">
+			<img src="./images/home/Untitled design (1).png" alt="Logo" style="width: 130px; height: auto;">
+		  </a>
+		  <!-- Navbar Toggler -->
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="oi oi-menu"></span> Menu
+		  </button>
+	  
+		  <!-- Navbar Links -->
+		  <div class="collapse navbar-collapse" id="ftco-nav">
+			<ul class="navbar-nav ml-auto">
+			  <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+			  <li class="nav-item "><a href="services.html" class="nav-link">Services</a></li>
+			  <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+			  <li class="nav-item active"><a href="about.html" class="nav-link">About</a></li>
+			  <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+			</ul>
+		  </div>
+		</div>
 	  </nav>
+	  
+	  <style>
+		/* Transparent background */
+		.navbar {
+		  background-color: rgba(0, 0, 0, 0.6); /* Adjust opacity as needed */
+		}
+	  
+		/* Highlight style for active links */
+		.navbar-nav .nav-item .nav-link.active,
+		.navbar-nav .nav-item .nav-link:hover {
+		  color: #FFD700; /* Gold color */
+		  background-color: #333333; /* Dark background */
+		  border-radius: 5px;
+		}
+	  
+		/* Adjust spacing for logo and links */
+		.navbar-brand img {
+		  max-height: 90px;
+		}
+	  
+		.navbar-nav .nav-item .nav-link {
+		  padding: 10px 15px;
+		}
+	  
+		/* Adjust padding when navbar is fixed */
+		body {
+		  padding-top: 80px; /* Adjust space below fixed navbar */
+		}
+	  </style>
     <!-- END nav -->
 
     <section class="hero-wrap hero-wrap-2" style="background-image: url('images/img\ \(3\).jpg');" data-stellar-background-ratio="0.5">
@@ -299,8 +334,8 @@
 				<h2 class="ftco-heading-2 logo">UrbanRituals</h2>
 				<p>Your destination for premium grooming and rejuvenation, crafted to elevate your style and confidence</p>
 				<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-				  <!--  <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li> -->
-				  <li class="ftco-animate"><a href=" https://search.app/YNRjZ3KTByhStfoU8"><span class="icon-facebook"></span></a></li> 
+				  <!-- <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li> -->
+				   <li class="ftco-animate"><a href=" https://search.app/YNRjZ3KTByhStfoU8"><span class="icon-facebook"></span></a></li> 
 				  <li class="ftco-animate"><a href="https://www.instagram.com/urbanrituals_clt?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><span class="icon-instagram"></span></a></li>
 				</ul>
 			  </div>
@@ -333,10 +368,10 @@
 				  <h2 class="ftco-heading-2">Have a Questions?</h2>
 				  <div class="block-23 mb-3">
 					<ul>
-					  <li><span class="icon icon-map-marker"></span><span class="text">PT Usha Road, Calicut - 32 (Opp. Downtown Cafe)</span></li>
+					  <li><span class="icon icon-map-marker" ></span><span class="text" style="color: white;">PT Usha Road, Calicut - 32 (Opp. Downtown Cafe)</span></li>
 					  <li><a href="#"><span class="icon icon-phone"></span><span class="text">8089001123, 0495-4602778</span></a></li>
 					  <li><a href="#"><span class="icon icon-envelope"></span><span class="text">urbanritualssalon@gmail.com
-					</span></a></li>
+					  </span></a></li>
 					</ul>
 				  </div>
 			  </div>
@@ -346,7 +381,7 @@
 			<div class="col-md-12 text-center">
   
 			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This Website is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">AuxxWeb</a>
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This Website is created and designed by <a href="https://colorlib.com" target="_blank">AuxxWeb solutions</a>
 	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 			</div>
 		  </div>

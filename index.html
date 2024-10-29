@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <title>UrbanRituals</title>
-	<link rel="icon" href="images/home/Untitled design (1).png"  type="image/png">
+  <link rel="icon" href="./images/home/Untitled design (1).png" type="image/png"> <!-- Favicon link -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -29,7 +30,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	  <!-- <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container" style="height: 100px;">
 	      <a class="navbar-brand" href="index.html"><img src="./images/home/Untitled design (1).png" style=" color: aliceblue;  width: 230px; height: 230px;"></span></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,13 +43,66 @@
 	        	<li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
 	        	<li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
 	        	<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	        	<!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
+	        	<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
 	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
 	    </div>
-	  </nav>
+	  </nav> -->
     <!-- END nav -->
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="ftco-navbar" style="background-color: rgba(0, 0, 0, 0.6);">
+		<div class="container">
+		  <!-- Logo image -->
+		  <a class="navbar-brand" href="index.html">
+			<img src="./images/home/Untitled design (1).png" alt="Logo" style="width: 130px; height: auto;">
+		  </a>
+		  <!-- Navbar Toggler -->
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="oi oi-menu"></span> Menu
+		  </button>
+	  
+		  <!-- Navbar Links -->
+		  <div class="collapse navbar-collapse" id="ftco-nav">
+			<ul class="navbar-nav ml-auto">
+			  <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+			  <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+			  <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+			  <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+			  <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+	  
+	  <style>
+		/* Transparent background */
+		.navbar {
+		  background-color: rgba(0, 0, 0, 0.6); 
+		}
+	  
+		/* Highlight style for active links */
+		.navbar-nav .nav-item .nav-link.active,
+		.navbar-nav .nav-item .nav-link:hover {
+		  color: #FFD700; /* Gold color */
+		  background-color: #ece7e7; 
+		  border-radius: 5px;
+		}
+	  
+		/* Adjust spacing for logo and links */
+		.navbar-brand img {
+		  max-height: 90px;
+		}
+	  
+		.navbar-nav .nav-item .nav-link {
+		  padding: 10px 15px;
+		}
+	  
+		/* Adjust padding when navbar is fixed */
+		body {
+		  padding-top: 80px; /* Adjust space below fixed navbar */
+		}
+	  </style>
+	  
 
     <section class="hero-wrap js-fullheight" style="background-image: url(images/home/urban\ rituals.png);" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
@@ -80,7 +134,7 @@
 					<div class="col-md-3 text-center d-flex align-items-stretch">
 						<div class="text-about py-5 px-4">
 							<h1 class="logo">
-								<a href="./index.html"><span class="flaticon-scissors-in-a-hair-salon-badge"></span>UrbanRituals</a>
+								<a href="./index.html"><img src="./images/home/Untitled design (1).png" style="width: 130px; height: auto;"></span>UrbanRituals</a>
 							</h1>
 							<h2>Welcome to our Salon</h2>
 							<p>Located on PT Usha Road, across from Downtown Cafe, Urban Rituals brings a contemporary twist to personal care. From expert haircuts to luxurious spa treatments, our salon provides top-notch grooming services designed to make you look and feel incredible.</p>
@@ -148,11 +202,11 @@
       </div>
     </section>
 
-    <!-- <section class="contact-section">
-		<div class="container">
-		  <div class="row">
+    <section class="contact-section">
+		<div class="container" >
+		  <div class="row" style="display: flex; justify-content: center;" >
 			<div class="col-12">
-			  <h2 class="contact-title">Get in Touch</h2>
+			  <h2 class="contact-title" style="display: flex; justify-content: center;">Get in Touch</h2>
 			</div>
 			<div
 			  id="successMessage"
@@ -437,19 +491,15 @@
         	<div class="col-md-3 ftco-animate">
         		<div class="pricing-entry pb-5 text-center">
         			<div>
-	        			<h3 class="mb-4">Pre-Bridal Package</h3>
-	        			<p><span class="price">Now: ₹4,999|</span> <span class="per">₹6,470 </span></p>
+	        			<h3 class="mb-4">BLEACH</h3>
+	        			<!-- <p><span class="price">Now: ₹4,999|</span> <span class="per">₹6,470 </span></p> -->
 	        		</div>
         			<ul>
-        				<li>Hair Dryer</li>
-								<li>Threading (Eyebrows, Upper Lip)</li>
-								<li>Urban Care Spa</li>
-								<li>Advanced Hair Cut</li>
-								<li>Waxing</li>
-								<li>Nails</li>
-								<li>Bleach/De-tan (Face, Neck, Blouse Line)</li>
-								<li>Basic Manicure & Pedicure</li>
-								<li>Urban Bright Facial</li>
+        				<li>FACE&NECK BLEACH:500.00</li>
+								<li>FEET BLEACH:150.00</li>
+								<li>FEET FOR MEN:150.00</li>
+								<li>FULL BODY BLEACH:1800.00</li>
+								
 								
         			</ul>
         			<p class="button text-center"><a href="./services.html" class="btn btn-primary px-4 py-3">Get Offer</a></p>
@@ -458,16 +508,16 @@
 			<div class="col-md-3 ftco-animate">
         		<div class="pricing-entry active pb-5 text-center">
         			<div>
-	        			<h3 class="mb-4">Groom Package</h3>
-	        			<p><span class="price">Now: ₹3,600|</span> <span class="per">₹4,300</span></p>
+	        			<h3 class="mb-4">DE-TAN</h3>
+	        			<!-- <p><span class="price">Now: ₹3,600|</span> <span class="per">₹4,300</span></p> -->
 	        		</div>
         			<ul>
-        				<li>Hair Cut-₹350</li>
-								<li>Beard Trim – ₹150</li>
+        				<li>MIDRIFF DE-TAN:300.00</li>
+								<li>FEET DE-TAN:150.00</li>
 								<!-- <li>Blush On – ₹2,800</li> -->
-								<li>Brighten Facial – ₹2800</li>
-								<li>De-tan Treatment  – ₹400</li>
-								<li>Urban Care Spa – ₹600</li>
+								<li>FACE&NECK DE-TAN:500.00</li>
+								<li>FULL BACK DE-TAN:800.00</li>
+								<!-- <li>Urban Care Spa – ₹600</li> -->
         			</ul>
         			<p class="button text-center"><a href="./services.html" class="btn btn-primary px-4 py-3">Get Offer</a></p>
         		</div>
@@ -481,11 +531,11 @@
 	        		</div>
         			<ul>
         				<li>Bakrid offer-1499.00</li>
-						<li>Bakrid offer 1-999.00</li>
+						<!-- <li>Bakrid offer 1-999.00</li> -->
 						<li>Eid offer-2300.00</li>
 						<li>Men's offer-899.00</li>
 						<li>Students offer-200.00</li>
-						<li>Students offer1	400.00</li>
+						<!-- <li>Students offer1	400.00</li> -->
 						
         			</ul>
         			<p class="button text-center"><a href="./services.html" class="btn btn-primary px-4 py-3">Get Offer</a></p>
@@ -499,19 +549,13 @@
 	        			<!-- <p><span class="price">Now: ₹3,600|</span> <span class="per">₹4,300</span></p> -->
 	        		</div>
         			<ul>
-        				<li>Braiding-500.00	</li>
-								<li>Braiding men-700.00</li>
-								<li>Braiding women-1000.00</li>
-								<li>CYSTEINE TREATMENT CROWN-4000.00</li>
-								<li>CYSTEINE TREATMENT FOR MEN-2000.00</li>
+        				<li>Braiding:500.00	</li>
+								<li>Braiding men:700.00</li>
+								<li>Braiding women:1000.00</li>
+								<li>Hair Setting men:400.00</li>
+								<!-- <li>CYSTEINE TREATMENT FOR MEN-2000.00</li> -->
         			</ul>
-					<div><h3 class="mb-4">CHIN THREADING-30.00</h3></div>
-					<ul>
-						<!-- <li>CHIN THREADING-30.00</li> -->
-						<li>EYEBROW THREADING MEN-40.00</li>
-						<li>EYEBROW THREADING WOMEN-40.00</li>
-						<!-- <li>FACE THREADING-350.00</li> -->
-					</ul>
+					
         			<p class="button text-center"><a href="./services.html" class="btn btn-primary px-4 py-3">Get Offer</a></p>
         		</div>
         	</div>
@@ -656,7 +700,7 @@
             	<h2 class="ftco-heading-2">Have a Questions?</h2>
             	<div class="block-23 mb-3">
 	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">PT Usha Road, Calicut - 32 (Opp. Downtown Cafe)</span></li>
+	                <li><span class="icon icon-map-marker" ></span><span class="text" style="color: white;">PT Usha Road, Calicut - 32 (Opp. Downtown Cafe)</span></li>
 	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">8089001123, 0495-4602778</span></a></li>
 	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">urbanritualssalon@gmail.com
 					</span></a></li>
@@ -669,7 +713,7 @@
           <div class="col-md-12 text-center">
 
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This Website is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">AuxxWeb</a>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This Website is created and designed by <a href="https://colorlib.com" target="_blank">AuxxWeb solutions</a>
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
           </div>
         </div>
